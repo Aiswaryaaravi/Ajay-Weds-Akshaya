@@ -8,7 +8,7 @@ const HeroSection = () => {
         <img
           src={heroImage}
           alt="Ajay and Akshaya"
-          className="w-full h-full object-cover object-center md:object-[50%_20%]"
+          className="w-full h-full object-cover object-[70%_20%] md:object-[50%_20%]"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/70" />
       </div>
