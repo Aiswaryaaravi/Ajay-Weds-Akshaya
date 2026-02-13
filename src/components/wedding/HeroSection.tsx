@@ -8,14 +8,14 @@ const HeroSection = () => {
         <img
           src={heroImage}
           alt="Ajay and Akshaya"
-          className="w-full h-full object-cover object-[30%_20%] md:object-[50%_20%]"
+          className="w-full h-full object-cover object-[60%_20%] md:object-[50%_20%]"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/70" />
       </div>
 
-      {/* Text overlay — positioned on left, text center-aligned within */}
-      <div className="relative z-10 flex h-full min-h-screen flex-col justify-end items-start pb-20 md:pb-28">
-        <div className="ml-[2%] md:ml-[8%] flex flex-col items-center text-center">
+      {/* Text overlay — centered on mobile, left-aligned on desktop */}
+      <div className="relative z-10 flex h-full min-h-screen flex-col justify-end items-center md:items-start pb-20 md:pb-28">
+        <div className="md:ml-[8%] flex flex-col items-center text-center">
           <p
             className="font-script text-4xl md:text-6xl text-white mb-2 drop-shadow-lg opacity-0 animate-fade-slide-up"
             style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}
